@@ -5,6 +5,12 @@ import FactoryMethod.impliments.Item;
 import FactoryMethod.structure.ItemFactory;
 
 public class Main {
+    /*
+     객체의 생성 로직을 서브 클래스에 위임하는 방식.
+     객체의 생성은 상위 클래스인 Factory.create()에서 틀을 제공하지만
+     여기선 내부의 체크 및 생성, 후처리 등은 하위 클래스에 맡기는 구조로 되어있다.
+     따라서 아이템 생성할때의 큰 룰은 따르지만 세세한 아이템 생성 룰은 서브 클래스가 맡고 있다.
+     */
     public static void main(String[] args) {
         Factory itemFactory = new ItemFactory();
 
